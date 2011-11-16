@@ -1,0 +1,21 @@
+alias ls='ls --color=auto'
+alias l='ls'
+alias ll='ls -lh'
+alias la='ls -A'
+alias lll='ls -Alh'
+
+alias cls='clear'
+alias grep='grep --color=auto'
+
+alias pacs='pacman -Ss'
+alias paci='sudo pacman -S'
+alias pacr='sudo pacman -Rs'
+alias pacy='sudo pacman -Syu'
+alias pacu='sudo pacman -Su'
+alias pacq='pacman -Qi'
+alias pacl='pacman -Ql'
+alias pacc='sudo pacman -Scc'
+
+alias ..='cd ..'
+
+alias tmux='tmux attach || tmux'
