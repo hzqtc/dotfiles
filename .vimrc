@@ -27,7 +27,6 @@ set showmatch
 set ruler
 set incsearch
 set mouse=a
-set ttymouse=xterm2
 set nu
 set backspace=indent,eol,start
 filetype on
