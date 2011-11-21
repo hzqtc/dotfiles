@@ -38,6 +38,9 @@ set ai
 set tags=tags;
 set autochdir
 
+autocmd VimEnter * set ttymouse=xterm2
+autocmd FocusGained * set ttymouse=xterm2
+autocmd BufEnter * set ttymouse=xterm2
+
 map <F6> :NERDTreeToggle<CR>
 map <F7> :BufExplorer<CR>
-
