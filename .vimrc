@@ -1,10 +1,10 @@
 if has("gui_running")
-	set lines=40
-	set columns=130
-	set guifont=Lucida\ Console\ 9
+	set lines=30
+	set columns=110
+	set guifont=monospace\ 10
 	set guioptions-=T
-	colorscheme desert
 	set cursorline
+	colorscheme koehler
 else
 	colorscheme elflord
 endif
