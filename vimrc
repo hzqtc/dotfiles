@@ -13,7 +13,6 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 set backspace=indent,eol,start
-set nowrap
 
 set mousehide
 set mouse=a
@@ -24,12 +23,11 @@ set nobackup
 
 set ignorecase
 set smartcase
-set hlsearch
 set incsearch
 set gdefault
 
 set wildmenu
-set visualbell
+set novisualbell
 set noerrorbells
 set nu
 set ruler
