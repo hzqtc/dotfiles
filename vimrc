@@ -1,6 +1,12 @@
 set nocompatible
 
-colorscheme elflord
+if has("gui_running")
+	set guioptions-=T
+	set lines=30
+	set columns=100
+endif
+
+colorscheme torte
 
 filetype plugin indent on
 syntax on
