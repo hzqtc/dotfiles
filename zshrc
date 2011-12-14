@@ -41,8 +41,4 @@ compinit
 
 autoload -U promptinit
 promptinit
-
-#export PS1="$(print '%{\e[1;31m%}%?%{\e[0m%}') $(print '%{\e[1;33m%}%n%{\e[0m%}') $(print '%{\e[1m%}@%{\e[0m%}') $(print '%{\e[1;35m%}%y%{\e[0m%}') $(print '%{\e[1m%}%#%{\e[0m%}') "
-export PS1="$(print '%{\e[1;31m%}%?%{\e[0m%}') $(print '%{\e[1;33m%}%m%{\e[0m%}') $(print '%{\e[1m%}%#%{\e[0m%}') "
-export PS2="$(print '%{\e[1;34m%}%_>%{\e[0m%}') "
-export RPROMPT="$(print '%{\e[1;34m%}%d%{\e[0m%}')"
+prompt adam2
