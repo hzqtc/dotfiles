@@ -5,7 +5,6 @@ export SAVEHIST=10000
 setopt AUTO_LIST
 setopt AUTO_MENU
 setopt APPEND_HISTORY
-setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
 
 eval `dircolors -b`
