@@ -5,4 +5,3 @@ cp ~/.zshrc zshrc
 cp ~/.aliasrc aliasrc
 cp ~/.fonts.conf fonts.conf
 cp ~/.tmux.conf tmux.conf
-cp ~/.config/zathura/zathurarc zathurarc
