@@ -1,0 +1,4 @@
+set adjust_open width
+set scroll_wrap false
+map <PageUp> scroll full_up
+map <PageDown> scroll full_down
