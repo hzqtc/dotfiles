@@ -49,5 +49,11 @@ autocmd VimEnter * set ttymouse=xterm2
 autocmd FocusGained * set ttymouse=xterm2
 autocmd BufEnter * set ttymouse=xterm2
 
+" jump to last position on reopen
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\ exe "normal! g'\"" |
+\ endif
+
 map <F6> :NERDTreeToggle<CR>
 map <F7> :BufExplorer<CR>
