@@ -3,3 +3,5 @@
 	email = hzqtc1229@gmail.com
 [color]
 	ui = true
+[format]
+	pretty = oneline

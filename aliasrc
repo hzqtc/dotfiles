@@ -1,10 +1,10 @@
+alias ..='cd ..'
+
 alias ls='ls --color=auto'
 alias l='ls'
 alias ll='ls -lh'
 alias la='ls -A'
 alias lll='ls -Alh'
-
-alias grep='grep --color=auto'
 
 alias pacs='pacman -Ss'
 alias paci='sudo pacman -S'
@@ -15,6 +15,7 @@ alias pacq='pacman -Qi'
 alias pacl='pacman -Ql'
 alias pacc='sudo pacman -Scc'
 
-alias ..='cd ..'
-
+alias grep='grep --color=auto'
 alias tmux='tmux attach || tmux'
+alias sued='sudoedit'
+
