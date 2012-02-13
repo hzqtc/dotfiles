@@ -13,7 +13,7 @@ eval `dircolors -b`
 source ~/.aliasrc
 
 bindkey -v
-# key bindings
+
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[2~" insert-last-word
 bindkey "\e[3~" delete-char
@@ -34,6 +34,7 @@ bindkey "\eOF" end-of-line
 # for freebsd console
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
+
 # completion in the middle of a line
 bindkey '^i' expand-or-complete-prefix
 
