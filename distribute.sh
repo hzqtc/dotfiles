@@ -36,7 +36,7 @@ then
 	cp gitconfig ~/.gitconfig
 fi
 
-if [ -f ~/.xbindkeysrc]
+if [ -f ~/.xbindkeysrc ]
 then
 	echo 'Distributing xbindkeysrc'
 	cp xbindkeysrc ~/.xbindkeysrc
