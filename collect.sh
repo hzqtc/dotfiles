@@ -36,3 +36,8 @@ then
 	cp ~/.gitconfig gitconfig
 fi
 
+if [ -f ~/.xbindkeysrc]
+then
+	echo 'Collecting xbindkeysrc'
+	cp ~/.xbindkeysrc xbindkeysrc
+fi

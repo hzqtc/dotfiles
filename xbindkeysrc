@@ -1,0 +1,8 @@
+"amixer set Master toggle"
+	m:0x10 + c:121
+
+"amixer set Master 5%-"
+	m:0x10 + c:122
+
+"amixer set Master 5%+"
+	m:0x10 + c:123
