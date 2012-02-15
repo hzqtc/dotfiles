@@ -41,3 +41,9 @@ then
 	echo 'Distributing xbindkeysrc'
 	cp xbindkeysrc ~/.xbindkeysrc
 fi
+
+if [ -f ~/.config/zathura/zathurarc ]
+then
+	echo 'Distributing zathurarc'
+	cp zathurarc ~/.config/zathura/zathurarc
+fi

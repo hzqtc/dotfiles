@@ -41,3 +41,10 @@ then
 	echo 'Collecting xbindkeysrc'
 	cp ~/.xbindkeysrc xbindkeysrc
 fi
+
+if [ -f ~/.config/zathura/zathurarc ]
+then
+	echo 'Collecting zathurarc'
+	cp ~/.config/zathura/zathurarc zathurarc
+fi
+

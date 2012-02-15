@@ -1,0 +1,11 @@
+set adjust_open bestfit
+set show_inputbar false
+set scroll_wrap false
+
+map <C-=> zoom in
+map <C--> zoom out
+
+map <PageUp> scroll full_up
+map <PageDown> scroll full_down
+
+map <C-q> quit
