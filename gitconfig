@@ -5,3 +5,8 @@
 	ui = true
 [format]
 	pretty = oneline
+[alias]
+	co = checkout
+	st = status
+	ci = commit -a
+	df = diff
