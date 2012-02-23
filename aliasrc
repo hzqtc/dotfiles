@@ -16,6 +16,5 @@ alias pacl='pacman -Ql'
 alias pacc='sudo pacman -Scc'
 
 alias grep='grep --color=auto'
-alias tmux='tmux attach || tmux'
 alias sued='sudoedit'
 
