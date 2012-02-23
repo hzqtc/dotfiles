@@ -1,36 +1,48 @@
 set nocompatible
+filetype off
 
-if has("gui_running")
-	set guioptions-=T
-	set lines=30
-	set columns=100
-	colorscheme desert
-else
-	colorscheme elflord
-endif
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'scrooloose/nerdtree'
+map <F6> :NERDTreeToggle<CR>
+
+Bundle 'scrooloose/nerdcommenter'
+let mapleader = '\'
+
+Bundle 'kien/ctrlp.vim'
+map <C-B> :CtrlPBuffer<CR>
+
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 syntax on
 
+set background=dark
+colorscheme solarized
+
 set autoindent
 set smartindent
-set cindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smarttab
+set expandtab
 set backspace=indent,eol,start
 
 set mousehide
 set mouse=a
+set ttymouse=xterm2
 
 set fileencodings=utf-8
 set encoding=utf-8
 set nobackup
 
-set ignorecase
 set smartcase
 set incsearch
+" replace with 'g' option in default
 set gdefault
 
 set wildmenu
@@ -42,18 +54,18 @@ set showmatch
 set showcmd
 set showmode
 
+" always display statusline
+set laststatus=2
+set statusline=%F\ %m%r%h%w\ %y\ %=\ %l,%v\ [%<%P]
+
 set tags=tags;
 set autochdir
 
-autocmd VimEnter * set ttymouse=xterm2
-autocmd FocusGained * set ttymouse=xterm2
-autocmd BufEnter * set ttymouse=xterm2
+" always recognize *.md as markdown file
+autocmd BufEnter,BufNew *.md set filetype=markdown
 
-" jump to last position on reopen
-autocmd BufReadPost *
-\ if line("'\"") > 0 && line("'\"") <= line("$") |
-\ exe "normal! g'\"" |
-\ endif
-
-map <F6> :NERDTreeToggle<CR>
-map <F7> :BufExplorer<CR>
+if has("gui_running")
+    set guioptions-=T
+    set lines=30
+    set columns=100
+endif
