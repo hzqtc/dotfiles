@@ -10,18 +10,13 @@ Bundle 'scrooloose/nerdtree'
 map <F6> :NERDTreeToggle<CR>
 
 Bundle 'scrooloose/nerdcommenter'
-let mapleader = '\'
+let g:NERDMenuMode=0
 
 Bundle 'kien/ctrlp.vim'
 map <C-B> :CtrlPBuffer<CR>
 
-Bundle 'altercation/vim-colors-solarized'
-
 filetype plugin indent on
-syntax on
-
-set background=dark
-colorscheme solarized
+syntax enable
 
 set autoindent
 set smartindent
@@ -56,7 +51,7 @@ set showmode
 
 " always display statusline
 set laststatus=2
-set statusline=%F\ %m%r%h%w\ %y\ %=\ %l,%v\ [%<%P]
+set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ [%<%P]
 
 set tags=tags;
 set autochdir
@@ -68,4 +63,8 @@ if has("gui_running")
     set guioptions-=T
     set lines=30
     set columns=100
+    colorscheme zellner
+else
+    colorscheme elflord
 endif
+
