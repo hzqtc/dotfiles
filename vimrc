@@ -60,11 +60,14 @@ set autochdir
 autocmd BufEnter,BufNew *.md set filetype=markdown
 
 if has("gui_running")
+    set guioptions-=m
     set guioptions-=T
+    set guioptions-=r
+    set guioptions-=L
     set lines=30
     set columns=100
-    colorscheme zellner
+    set background=light
 else
-    colorscheme elflord
+    set background=dark
 endif
 
