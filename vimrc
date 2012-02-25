@@ -6,6 +6,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'FencView.vim'
+let g:fencview_autodetect=0
+
 Bundle 'scrooloose/nerdtree'
 map <F6> :NERDTreeToggle<CR>
 
