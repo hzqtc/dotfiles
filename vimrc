@@ -6,6 +6,13 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'majutsushi/tagbar'
+map <F8> :TagbarToggle<CR>
+let g:tagbar_sort=0
+let g:tagbar_compact=1
+
+Bundle 'ervandew/supertab'
+
 Bundle 'FencView.vim'
 let g:fencview_autodetect=0
 
@@ -63,10 +70,7 @@ set autochdir
 autocmd BufEnter,BufNew *.md set filetype=markdown
 
 if has("gui_running")
-    set guioptions-=m
-    set guioptions-=T
-    set guioptions-=r
-    set guioptions-=L
+    set guioptions=acei
     set lines=30
     set columns=100
     set background=light
