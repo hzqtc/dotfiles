@@ -1,6 +1,8 @@
 set nocompatible
+
 filetype off
 
+" use vundle to manage plugins
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -61,7 +63,8 @@ set showmode
 
 " always display statusline
 set laststatus=2
-set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ [%<%P]
+" statsuline: filename, mode, filetype, line number, scroll position
+set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ %<%P
 
 set tags=tags;
 set autochdir
@@ -69,12 +72,14 @@ set autochdir
 " always recognize *.md as markdown file
 autocmd BufEnter,BufNew *.md set filetype=markdown
 
+colorscheme default
+
 if has("gui_running")
-    set guioptions=acei
+    " only show gui tabline and icon
+    set guioptions=ei
     set lines=30
     set columns=100
     set background=light
 else
     set background=dark
 endif
-
