@@ -8,13 +8,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'majutsushi/tagbar'
-map <F8> :TagbarToggle<CR>
-let g:tagbar_sort=0
-let g:tagbar_compact=1
-
-Bundle 'ervandew/supertab'
-
 Bundle 'FencView.vim'
 let g:fencview_autodetect=0
 
@@ -23,6 +16,13 @@ map <F6> :NERDTreeToggle<CR>
 
 Bundle 'scrooloose/nerdcommenter'
 let g:NERDMenuMode=0
+" toggle comment on and off
+map <F7> \c<Space>
+
+Bundle 'majutsushi/tagbar'
+map <F8> :TagbarToggle<CR>
+let g:tagbar_sort=0
+let g:tagbar_compact=1
 
 Bundle 'kien/ctrlp.vim'
 map <C-B> :CtrlPBuffer<CR>
