@@ -8,6 +8,8 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'tpope/vim-markdown'
+
 Bundle 'FencView.vim'
 let g:fencview_autodetect=0
 
@@ -68,9 +70,6 @@ set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ %<%P
 
 set tags=tags;
 set autochdir
-
-" always recognize *.md as markdown file
-autocmd BufEnter,BufNew *.md set filetype=markdown
 
 colorscheme default
 
