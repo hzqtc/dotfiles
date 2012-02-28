@@ -10,3 +10,4 @@
 	st = status
 	ci = commit -a
 	df = diff
+    ls = ls-files
