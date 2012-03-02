@@ -13,6 +13,7 @@ alias pacy='sudo pacman -Syu'
 alias pacu='sudo pacman -U'
 alias pacq='pacman -Qi'
 alias pacl='pacman -Ql'
+alias paco='pacman -Qo'
 alias pacc='sudo pacman -Scc'
 
 alias grep='grep --color=auto'
