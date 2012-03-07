@@ -1,11 +1,12 @@
-set adjust_open bestfit
-set show_inputbar false
-set scroll_wrap false
+set adjust-open width
 
-map <C-=> zoom in
-map <C--> zoom out
+map = zoom default
 
-map <PageUp> scroll full_up
-map <PageDown> scroll full_down
+map <PageUp> scroll half-up
+map <PageDown> scroll half-down
 
-map <C-q> quit
+map <Space> navigate next
+map , navigate previous
+map . navigate next
+
+map <F11> toggle_fullscreen
