@@ -71,11 +71,14 @@ set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ %<%P
 set tags=tags;
 set autochdir
 
+" jump to last position
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
 colorscheme default
 
 if has("gui_running")
-    " only show gui tabline and icon
-    set guioptions=ei
+    " only show gui tabline and icon, and use console instead of popup dialog
+    set guioptions=eic
     set lines=30
     set columns=100
     set background=light
