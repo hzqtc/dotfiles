@@ -1,4 +1,6 @@
-set adjust-open width
+set adjust-open best-fit
+set window-height 900
+set window-width 1440
 
 map = zoom default
 
@@ -9,4 +11,5 @@ map <Space> navigate next
 map , navigate previous
 map . navigate next
 
-map <F11> toggle_fullscreen
+map <A-1> set "pages-per-row 1"
+map <A-2> set "pages-per-row 2"
