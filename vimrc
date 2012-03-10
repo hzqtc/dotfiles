@@ -10,6 +10,9 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-markdown'
 
+Bundle 'altercation/vim-colors-solarized'
+let g:solarized_italic=0
+
 Bundle 'FencView.vim'
 let g:fencview_autodetect=0
 
@@ -40,6 +43,7 @@ set softtabstop=4
 set smarttab
 set expandtab
 set backspace=indent,eol,start
+set nofoldenable
 
 set mousehide
 set mouse=a
@@ -74,14 +78,16 @@ set autochdir
 " jump to last position
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
-colorscheme default
-
 if has("gui_running")
     " only show gui tabline and icon, and use console instead of popup dialog
     set guioptions=eic
     set lines=30
     set columns=100
+    colorscheme solarized
     set background=light
+    call togglebg#map("<F5>")
 else
+    colorscheme default
     set background=dark
 endif
+
