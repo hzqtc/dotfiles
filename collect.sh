@@ -48,3 +48,15 @@ then
 	cp ~/.config/zathura/zathurarc zathurarc
 fi
 
+if [ -f ~/.vimperatorrc ]
+then
+    echo 'Collecting vimperatorrc'
+    cp ~/.vimperatorrc vimperatorrc
+fi
+
+if [ -f ~/.vimperator/info/default/quickmarks ]
+then
+    echo 'Collecting vimperator quickmarks'
+    cp ~/.vimperator/info/default/quickmarks vimperator-quickmarks
+fi
+

@@ -47,3 +47,16 @@ then
 	echo 'Distributing zathurarc'
 	cp zathurarc ~/.config/zathura/zathurarc
 fi
+
+if [ -f ~/.vimperatorrc ]
+then
+    echo 'Distributing vimperatorrc'
+    cp vimperatorrc ~/.vimperatorrc
+fi
+
+if [ -f ~/.vimperator/info/default/quickmarks ]
+then
+    echo 'Distributing vimperator quickmarks'
+    cp vimperator-quickmarks ~/.vimperator/info/default/quickmarks
+fi
+

@@ -1,0 +1,2 @@
+inoremap <C-a> <Insert><C-a><Insert>
+set noscrollbars
