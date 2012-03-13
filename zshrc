@@ -1,3 +1,5 @@
+export PATH=$PATH:~/.gem/ruby/1.9.1/bin
+
 export EDITOR=vim
 
 export HISTFILE=~/.zsh_history

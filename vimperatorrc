@@ -1,2 +1,10 @@
+"3.3 (created: 2011/11/13 17:32:12)
+
 inoremap <C-a> <Insert><C-a><Insert>
 set noscrollbars
+style! pt.sjtu.edu.cn #scrollbar { display: none; }
+style! weibo.com #pl_content_pullylist { display: none; }
+style! www.youtube.com #homepage-sidebar-ads { display: none; }
+source! /home/hzqtc/.vimperatorrc.local
+
+" vim: set ft=vimperator:
