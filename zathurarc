@@ -1,4 +1,5 @@
 set adjust-open best-fit
+set scroll-step 100
 set window-height 900
 set window-width 1440
 
