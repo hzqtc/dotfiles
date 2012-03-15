@@ -70,13 +70,18 @@ pad_percents 3
 use_spacer left
 
 TEXT
+${font Serif:bold:size=12}Info$font
+$hr
+$nodename - $sysname $kernel on $machine
+Uptime: $uptime$alignr${time %a, %b %d, %k:%M}
+
 ${font Serif:bold:size=12}Workload$font
 $hr
 CPU 1: ${cpu cpu1}% ${cpubar cpu1}
 CPU 2: ${cpu cpu2}% ${cpubar cpu2}
 CPU 3: ${cpu cpu3}% ${cpubar cpu3}
 CPU 4: ${cpu cpu4}% ${cpubar cpu4}
-Memo : $memperc% ${membar}
+RAM  : $memperc% ${membar}
 
 ${font Serif:bold:size=12}Battery$font
 $hr
@@ -89,12 +94,13 @@ $hr
 
 ${font Serif:bold:size=12}Disk$font
 $hr
-Read : ${diskio_read sda}${tab 80}Write: ${diskio_write sda}
+Read : ${diskio_read sda}${tab 100}Write: ${diskio_write sda}
 
 ${font Serif:bold:size=12}Networking$font
 $hr
-Up   : ${upspeed eth0}${tab 80}Down : ${downspeed eth0}
+Up   : ${upspeed eth0}${tab 100}Down : ${downspeed eth0}
 
 ${font Serif:bold:size=12}Weather$font
 $hr
-${weather http://xoap.weather.com/weather/local/ CHXX0116 cloud_cover}${weather http://xoap.weather.com/weather/local/ CHXX0116 temperature}°C ${weather http://xoap.weather.com/weather/local/ CHXX0116 humidity}%
+Today: ${weather http://xoap.weather.com/weather/local/ CHXX0116 cloud_cover}${tab 100}Temp :${weather http://xoap.weather.com/weather/local/ CHXX0116 temperature}°C
+Humid: ${weather http://xoap.weather.com/weather/local/ CHXX0116 humidity}%${tab 100}Wind : ${weather http://xoap.weather.com/weather/local/ CHXX0116 wind_speed}km/h
