@@ -65,17 +65,17 @@ xftfont Monospace:size=10
 uppercase yes
 
 default_color ffffff
+color1 ddaa00
 
 pad_percents 3
 use_spacer left
 
 TEXT
-${font Serif:bold:size=12}Info$font
+$color1${font Serif:bold:size=12}Info$font$color
 $hr
-$nodename - $sysname $kernel on $machine
-Uptime: $uptime$alignr${time %a, %b %d, %k:%M}
+Uptime: $uptime_short$alignr${time %a, %b %d, %k:%M}
 
-${font Serif:bold:size=12}Workload$font
+$color1${font Serif:bold:size=12}Workload$font$color
 $hr
 CPU 1: ${cpu cpu1}% ${cpubar cpu1}
 CPU 2: ${cpu cpu2}% ${cpubar cpu2}
@@ -83,24 +83,25 @@ CPU 3: ${cpu cpu3}% ${cpubar cpu3}
 CPU 4: ${cpu cpu4}% ${cpubar cpu4}
 RAM  : $memperc% ${membar}
 
-${font Serif:bold:size=12}Battery$font
+$color1${font Serif:bold:size=12}Battery$font$color
 $hr
 Usage: $battery_percent% $battery_bar
 
-${font Serif:bold:size=12}Filesystems$font
+$color1${font Serif:bold:size=12}Filesystems$font$color
 $hr
 /    : ${fs_used_perc /}% ${fs_bar 6 /}
 /home: ${fs_used_perc /home}% ${fs_bar 6 /home}
 
-${font Serif:bold:size=12}Disk$font
+$color1${font Serif:bold:size=12}Disk$font$color
 $hr
-Read : ${diskio_read sda}${tab 100}Write: ${diskio_write sda}
+Read : ${diskio_read sda}${tab 80}Write: ${diskio_write sda}
 
-${font Serif:bold:size=12}Networking$font
+$color1${font Serif:bold:size=12}Networking$font$color
 $hr
-Up   : ${upspeed eth0}${tab 100}Down : ${downspeed eth0}
+Up   : ${upspeed eth0}${tab 80}Down : ${downspeed eth0}
 
-${font Serif:bold:size=12}Weather$font
+$color1${font Serif:bold:size=12}Weather$font$color
 $hr
-Today: ${weather http://xoap.weather.com/weather/local/ CHXX0116 cloud_cover}${tab 100}Temp :${weather http://xoap.weather.com/weather/local/ CHXX0116 temperature}°C
-Humid: ${weather http://xoap.weather.com/weather/local/ CHXX0116 humidity}%${tab 100}Wind : ${weather http://xoap.weather.com/weather/local/ CHXX0116 wind_speed}km/h
+Today: ${weather http://xoap.weather.com/weather/local/ CHXX0116 cloud_cover}${tab 80}Temp :${weather http://xoap.weather.com/weather/local/ CHXX0116 temperature}°C
+Humid: ${weather http://xoap.weather.com/weather/local/ CHXX0116 humidity}%${tab 80}Wind : ${weather http://xoap.weather.com/weather/local/ CHXX0116 wind_speed}km/h
+
