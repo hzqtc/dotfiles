@@ -4,7 +4,9 @@ inoremap <C-a> <Insert><C-a><Insert>
 set noscrollbars
 style! pt.sjtu.edu.cn #scrollbar { display: none; }
 style! weibo.com #pl_content_pullylist { display: none; }
+style! dota.uuu9.com #tipsAD { display: none; }
 style! www.youtube.com #homepage-sidebar-ads { display: none; }
+style! www.youtube.com #watch-channel-brand-div { display: none; }
 source! /home/hzqtc/.vimperatorrc.local
 
 " vim: set ft=vimperator:
