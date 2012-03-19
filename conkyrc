@@ -69,9 +69,6 @@ pad_percents 3
 use_spacer left
 
 TEXT
-$color1${font Serif:bold:size=12}Info$font$color
-$hr
-Uptime: $uptime_short${tab 90}${time %a, %b %d, %k:%M}
 
 $color1${font Serif:bold:size=12}Workload$font$color
 $hr
