@@ -50,8 +50,6 @@ alignment middle_left
 gap_x 50
 gap_y 0
 
-minimum_size 300 0
-
 # -- Graphics settings -- #
 draw_shades no
 draw_outline no
@@ -73,7 +71,7 @@ use_spacer left
 TEXT
 $color1${font Serif:bold:size=12}Info$font$color
 $hr
-Uptime: $uptime_short$alignr${time %a, %b %d, %k:%M}
+Uptime: $uptime_short${tab 90}${time %a, %b %d, %k:%M}
 
 $color1${font Serif:bold:size=12}Workload$font$color
 $hr
@@ -94,14 +92,14 @@ $hr
 
 $color1${font Serif:bold:size=12}Disk$font$color
 $hr
-Read : ${diskio_read sda}${tab 80}Write: ${diskio_write sda}
+Read : ${diskio_read sda}${tab 90}Write: ${diskio_write sda}
 
 $color1${font Serif:bold:size=12}Networking$font$color
 $hr
-Up   : ${upspeed eth0}${tab 80}Down : ${downspeed eth0}
+Up   : ${upspeed eth0}${tab 90}Down : ${downspeed eth0}
 
 $color1${font Serif:bold:size=12}Weather$font$color
 $hr
-Today: ${weather http://xoap.weather.com/weather/local/ CHXX0116 cloud_cover}${tab 80}Temp :${weather http://xoap.weather.com/weather/local/ CHXX0116 temperature}°C
-Humid: ${weather http://xoap.weather.com/weather/local/ CHXX0116 humidity}%${tab 80}Wind : ${weather http://xoap.weather.com/weather/local/ CHXX0116 wind_speed}km/h
+Today: ${weather http://xoap.weather.com/weather/local/ CHXX0116 cloud_cover}${tab 90}Temp :${weather http://xoap.weather.com/weather/local/ CHXX0116 temperature}°C
+Humid: ${weather http://xoap.weather.com/weather/local/ CHXX0116 humidity}%${tab 90}Wind : ${weather http://xoap.weather.com/weather/local/ CHXX0116 wind_speed}km/h
 
