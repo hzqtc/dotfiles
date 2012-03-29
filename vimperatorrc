@@ -8,6 +8,7 @@ style! renren.com #notice_system { display: none !important; }
 style! dota.uuu9.com #tipsAD { display: none !important; }
 style! www.youtube.com #homepage-sidebar-ads { display: none; }
 style! www.youtube.com #watch-channel-brand-div { display: none; }
+style! www.youtube.com .ad-div { display: none; }
 source! /home/hzqtc/.vimperatorrc.local
 
 " vim: set ft=vimperator:
