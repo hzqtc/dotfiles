@@ -15,9 +15,9 @@ do
         echo "$name => $file"
         cp "$name" "$file"
     else
-        echo -n "Do you wish to copy $name to $file? [Yn]"
+        echo -n "Do you wish to copy $name to $file? [y/N]"
         read ans
-        if [ "$ans" == "" -o "$ans" == "y" -o "$ans" == "Y" ]
+        if [ "$ans" == "y" -o "$ans" == "Y" ]
         then
             echo "$name => $file"
             cp "$name" "$file"
