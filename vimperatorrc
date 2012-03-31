@@ -3,7 +3,7 @@
 inoremap <C-a> <Insert><C-a><Insert>
 set noscrollbars
 style! pt.sjtu.edu.cn #scrollbar { display: none; }
-style! weibo.com #pl_content_biztips { display: none; }
+style! weibo.com #pl_content_pullylist { display: none; }
 style! renren.com #notice_system { display: none !important; }
 style! www.youtube.com #homepage-sidebar-ads { display: none; }
 style! www.youtube.com #watch-channel-brand-div { display: none; }
