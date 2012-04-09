@@ -1,4 +1,4 @@
-export PATH=$PATH:~/.gem/ruby/1.9.1/bin
+export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 
 export EDITOR=vim
 

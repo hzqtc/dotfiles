@@ -78,9 +78,9 @@ CPU 3: ${cpu cpu3}% ${cpubar cpu3}
 CPU 4: ${cpu cpu4}% ${cpubar cpu4}
 RAM  : $memperc% ${membar}
 
-${if_existing /sys/class/power_supply/BAT0/present 1}$color1${font Serif:bold:size=12}Battery$font$color
+$color1${font Serif:bold:size=12}Battery$font$color
 $hr
-Usage: $battery_percent% $battery_bar$endif
+Usage: $battery_percent% $battery_bar
 
 $color1${font Serif:bold:size=12}Filesystems$font$color
 $hr
