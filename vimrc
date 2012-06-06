@@ -52,6 +52,7 @@ set ttymouse=xterm2
 set fileencodings=utf-8
 set encoding=utf-8
 set nobackup
+set hidden
 
 set smartcase
 set incsearch
