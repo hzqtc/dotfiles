@@ -1,8 +1,8 @@
 "3.4 (created: 2012/04/02 20:07:29)
 
 inoremap <C-a> <Insert><C-a><Insert>
+noremap <F2> i<C-S-Tab>
 set noscrollbars
-set gui=none
 style! pt.sjtu.edu.cn #scrollbar { display: none; }
 style! www.youtube.com #homepage-sidebar-ads { display: none; }
 style! www.youtube.com #watch-channel-brand-div { display: none; }
