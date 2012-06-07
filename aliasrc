@@ -1,6 +1,4 @@
-alias ..='cd ..'
-
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 alias l='ls'
 alias ll='ls -lh'
 alias la='ls -A'
@@ -18,4 +16,3 @@ alias pacc='sudo pacman -Scc'
 
 alias grep='grep --color=auto'
 alias sued='sudoedit'
-
