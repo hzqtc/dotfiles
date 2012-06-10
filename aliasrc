@@ -18,3 +18,5 @@ alias pacc='sudo pacman -Scc'
 
 alias grep='grep --color=auto'
 alias sued='sudoedit'
+
+alias make='make -j8'
