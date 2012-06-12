@@ -2,14 +2,20 @@
 
 inoremap <C-a> <Insert><C-a><Insert>
 noremap <F2> i<C-S-Tab>
+
 set noscrollbars
+
 style! pt.sjtu.edu.cn #scrollbar { display: none; }
+
 style! www.youtube.com #homepage-sidebar-ads { display: none; }
 style! www.youtube.com #watch-channel-brand-div { display: none; }
 style! www.youtube.com .ad-div { display: none; }
+
 style! chdbits.org img[alt="ad"] { display: none; }
 style! chdbits.org div#ad_torrentdetail { display: none; }
+style! chdbits.org div#ad_belowsearchbox { display: none; }
 style! chdbits.org iframe#baiduSpFrame { display: none; }
+
 source! /home/hzqtc/.vimperatorrc.local
 
 " vim: set ft=vimperator:
