@@ -1,0 +1,8 @@
+#appmenu-button-container, #appmenu-toolbar-button {
+display: none !important;
+}
+
+.tab-close-button {
+visibility: visible !important;
+display: inline !important;
+}
