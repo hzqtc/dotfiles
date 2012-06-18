@@ -6,7 +6,3 @@ display: none !important;
 visibility: visible !important;
 display: inline !important;
 }
-
-.tabbrowser-tab,.tabs-newtab-button {
--moz-border-image: url("chrome://browser/skin/tabbrowser/tab.png") 4 5 3 6 / 4px 5px 3px 6px !important;
-}
