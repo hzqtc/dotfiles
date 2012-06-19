@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=( ~/.vimrc ~/.zshrc ~/.aliasrc ~/.fonts.conf ~/.gitconfig ~/.xbindkeysrc ~/.vimperatorrc ~/.vimperator/info/default/quickmarks ~/.conkyrc )
+dotfiles=( ~/.vimrc ~/.zshrc ~/.aliasrc ~/.fonts.conf ~/.gitconfig ~/.xbindkeysrc ~/.vimperatorrc ~/.vimperator/info/default/quickmarks ~/.conkyrc /etc/privoxy/adblock.action )
 
 for file in ${dotfiles[*]}
 do

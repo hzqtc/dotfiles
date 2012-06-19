@@ -1,0 +1,10 @@
+{{alias}}
++block-as-image     = +block{Blocked image request.} +handle-as-image
+-block-as-image     = -block
+
+{ +block-as-image }
+.doubleclick.net
+impservice.dictapp.youdao.com
+impservice.dictweb.youdao.com
+pagead*.googlesyndication.com
+cpro.baidu.com
