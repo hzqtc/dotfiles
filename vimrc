@@ -54,6 +54,7 @@ set encoding=utf-8
 set nobackup
 set hidden
 
+set ignorecase
 set smartcase
 set incsearch
 " replace with 'g' option in default
@@ -75,6 +76,8 @@ set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ %<%P
 
 set tags=tags;
 set autochdir
+
+map <F2> :sort u<CR>
 
 " jump to last position
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
