@@ -1,11 +1,9 @@
 inoremap <C-a> <Insert><C-a><Insert>
-noremap <F12> :tabdu<CR>
 noremap <F2> i<C-S-Tab>
 
 set animations
 set complete=sl
 set defsearch=google
-set focuscontent
 set noscrollbars
 
 style! chdbits.org div#ad_belowsearchbox { display: none; }
