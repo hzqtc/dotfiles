@@ -1,21 +1,18 @@
-"3.4 (created: 2012/04/02 20:07:29)
-
 inoremap <C-a> <Insert><C-a><Insert>
+noremap <F12> :tabdu<CR>
 noremap <F2> i<C-S-Tab>
 
+set animations
+set complete=sl
+set defsearch=google
+set focuscontent
 set noscrollbars
 
+style! chdbits.org div#ad_belowsearchbox { display: none; }
+style! chdbits.org div#ad_torrentdetail { display: none; }
+style! chdbits.org iframe#baiduSpFrame { display: none; }
+style! chdbits.org img[alt="ad"] { display: none; }
 style! pt.sjtu.edu.cn #scrollbar { display: none; }
-
 style! www.youtube.com #homepage-sidebar-ads { display: none; }
 style! www.youtube.com #watch-channel-brand-div { display: none; }
 style! www.youtube.com .ad-div { display: none; }
-
-style! chdbits.org img[alt="ad"] { display: none; }
-style! chdbits.org div#ad_torrentdetail { display: none; }
-style! chdbits.org div#ad_belowsearchbox { display: none; }
-style! chdbits.org iframe#baiduSpFrame { display: none; }
-
-source! /home/hzqtc/.vimperatorrc.local
-
-" vim: set ft=vimperator:
