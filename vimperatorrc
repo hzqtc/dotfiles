@@ -1,16 +1,23 @@
+" key mappings
 inoremap <C-a> <Insert><C-a><Insert>
 noremap <F2> i<C-S-Tab>
 
+" options
 set animations
 set complete=sl
 set defsearch=google
 set noscrollbars
 
-style! chdbits.org div#ad_belowsearchbox { display: none; }
-style! chdbits.org div#ad_torrentdetail { display: none; }
-style! chdbits.org iframe#baiduSpFrame { display: none; }
-style! chdbits.org img[alt="ad"] { display: none; }
-style! pt.sjtu.edu.cn #scrollbar { display: none; }
-style! www.youtube.com #homepage-sidebar-ads { display: none; }
-style! www.youtube.com #watch-channel-brand-div { display: none; }
-style! www.youtube.com .ad-div { display: none; }
+" hide ads
+style * object, embed { display: none !important; }
+style chdbits.org div#ad_belowsearchbox { display: none; }
+style chdbits.org div#ad_torrentdetail { display: none; }
+style chdbits.org iframe#baiduSpFrame { display: none; }
+style chdbits.org img[alt="ad"] { display: none; }
+style pt.sjtu.edu.cn #scrollbar { display: none; }
+style www.youtube.com #homepage-sidebar-ads { display: none; }
+style www.youtube.com #watch-channel-brand-div { display: none; }
+style www.youtube.com .ad-div { display: none; }
+
+" hide firefox app menu
+style chrome://browser/content/browser.xul #appmenu-toolbar-button { display: none !important; }
