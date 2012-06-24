@@ -21,3 +21,5 @@ style www.youtube.com .ad-div { display: none; }
 
 " hide firefox app menu
 style chrome://browser/content/browser.xul #appmenu-toolbar-button { display: none !important; }
+" always display close button
+style chrome://browser/content/browser.xul .tab-close-button { display: inline !important; }
