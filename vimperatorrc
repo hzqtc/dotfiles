@@ -9,7 +9,6 @@ set defsearch=google
 set noscrollbars
 
 " hide ads
-style * object, embed { display: none !important; }
 style chdbits.org div#ad_belowsearchbox { display: none; }
 style chdbits.org div#ad_torrentdetail { display: none; }
 style chdbits.org iframe#baiduSpFrame { display: none; }
