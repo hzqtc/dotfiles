@@ -1,12 +1,10 @@
 " key mappings
 inoremap <C-a> <Insert><C-a><Insert>
-noremap <F2> i<C-S-Tab>
 
 " options
 set animations
 set complete=sl
 set defsearch=google
-set noscrollbars
 
 " hide firefox app menu
 style chrome://browser/content/browser.xul #appmenu-toolbar-button { display: none !important; }

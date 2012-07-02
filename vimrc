@@ -32,6 +32,8 @@ let g:tagbar_compact=1
 Bundle 'kien/ctrlp.vim'
 map <C-B> :CtrlPBuffer<CR>
 
+map <F2> :sort u<CR>
+
 filetype plugin indent on
 syntax enable
 
@@ -72,12 +74,10 @@ set showmode
 " always display statusline
 set laststatus=2
 " statsuline: filename, mode, filetype, line number, scroll position
-set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l\ %<%P
+set statusline=%F\ %m%r%h%w\ %y\ %=\ line:%l,%c\ %<%P
 
 set tags=tags;
 set autochdir
-
-map <F2> :sort u<CR>
 
 " jump to last position
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
