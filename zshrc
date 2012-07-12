@@ -45,4 +45,4 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt adam2
+prompt walters
