@@ -32,6 +32,9 @@ let g:tagbar_compact=1
 Bundle 'kien/ctrlp.vim'
 map <C-B> :CtrlPBuffer<CR>
 
+Bundle 'Gundo'
+nnoremap <F4> :GundoToggle<CR>
+
 map <F2> :sort u<CR>
 
 filetype plugin indent on
