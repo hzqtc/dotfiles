@@ -35,6 +35,8 @@ map <C-B> :CtrlPBuffer<CR>
 Bundle 'Gundo'
 nnoremap <F4> :GundoToggle<CR>
 
+Bundle 'msanders/snipmate.vim'
+
 map <F2> :sort u<CR>
 
 filetype plugin indent on
