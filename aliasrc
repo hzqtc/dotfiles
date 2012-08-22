@@ -20,3 +20,7 @@ alias grep='grep --color=auto'
 alias sued='sudoedit'
 
 alias make='make -j8'
+
+youku() {
+    ~/misc/youku.py "$1" | xargs mplayer
+}

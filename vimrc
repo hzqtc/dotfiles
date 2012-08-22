@@ -38,6 +38,7 @@ nnoremap <F4> :GundoToggle<CR>
 Bundle 'msanders/snipmate.vim'
 
 map <F2> :sort u<CR>
+map <F3> :FencAutoDetect<CR>:set fenc=utf-8<CR>:w<CR>
 
 filetype plugin indent on
 syntax enable
