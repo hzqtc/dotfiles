@@ -33,11 +33,13 @@ Bundle 'kien/ctrlp.vim'
 map <C-B> :CtrlPBuffer<CR>
 
 Bundle 'Gundo'
-nnoremap <F4> :GundoToggle<CR>
+map <F4> :GundoToggle<CR>
 
 Bundle 'msanders/snipmate.vim'
 
+" sort and unqiue selection lines
 map <F2> :sort u<CR>
+" convert current buffer to utf-8 encoding and save
 map <F3> :FencAutoDetect<CR>:set fenc=utf-8<CR>:w<CR>
 
 filetype plugin indent on
