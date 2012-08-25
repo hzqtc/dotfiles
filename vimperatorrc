@@ -10,3 +10,5 @@ set defsearch=google
 style chrome://browser/content/browser.xul #appmenu-toolbar-button { display: none !important; }
 " always display close button
 style chrome://browser/content/browser.xul .tab-close-button { display: inline !important; }
+" hide fullscreen window controls
+style chrome://browser/content/browser.xul #window-controls { display: none !important; }
