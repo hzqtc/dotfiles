@@ -1,10 +1,12 @@
 " key mappings
+" use <C-A> to select all content in INSERT mode
 inoremap <C-a> <Insert><C-a><Insert>
 
 " options
 set animations
 set complete=sl
 set defsearch=google
+set noscrollbars
 
 " hide firefox app menu
 style chrome://browser/content/browser.xul #appmenu-toolbar-button { display: none !important; }
