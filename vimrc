@@ -100,4 +100,3 @@ else
     colorscheme default
     set background=dark
 endif
-
