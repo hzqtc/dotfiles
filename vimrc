@@ -12,6 +12,8 @@ Bundle 'tpope/vim-markdown'
 
 Bundle 'altercation/vim-colors-solarized'
 let g:solarized_italic=0
+let g:solarized_hitrail=1
+let g:solarized_menu=0
 
 Bundle 'FencView.vim'
 let g:fencview_autodetect=0
@@ -52,6 +54,9 @@ set smarttab
 set expandtab
 set backspace=indent,eol,start
 set nofoldenable
+set nowrap
+set splitright
+set splitbelow
 
 set mousehide
 set mouse=a
@@ -60,6 +65,7 @@ set ttymouse=xterm2
 set fileencodings=utf-8
 set encoding=utf-8
 set nobackup
+set noswapfile
 set hidden
 
 set ignorecase
@@ -84,6 +90,8 @@ set statusline=%F\ %m%r%h%w\ %y\ [%{&fenc}]\ %=\ row:%l,\ col:%c\ %<%P
 
 set tags=tags;
 set autochdir
+set formatoptions=tcroqlmM
+set textwidth=80
 
 " jump to last position
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
