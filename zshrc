@@ -1,5 +1,3 @@
-export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
-
 export EDITOR=vim
 
 export HISTFILE=~/.zsh_history
