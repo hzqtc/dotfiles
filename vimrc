@@ -54,7 +54,6 @@ set smarttab
 set expandtab
 set backspace=indent,eol,start
 set nofoldenable
-set nowrap
 set splitright
 set splitbelow
 
